@@ -25,6 +25,8 @@
         <td>{{$item->subtitle}}</td>
         <td>{{$item->author}}</td>
         <td>{{$item->pubblication}}</td>
+        {{-- PASSO LA ROUTE SHOW E IL PARAMETRO ID --}}
+        <td><a href="{{route('articles.show', $item->id)}}"><i class="fas fa-plus-square"></i></a></td>
       </tr>
           
       @endforeach
