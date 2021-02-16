@@ -4,7 +4,7 @@
 
 
 @section('header_content')
-  <h1>Tutti i miei articoli</h1>
+  <h1 class="text-center">Tutti i miei articoli</h1>
 @endsection
 
 
@@ -21,13 +21,11 @@
     <tbody>
       @foreach ($articles as $item)
       <tr>
-
+        {{-- PASSO LA ROUTE SHOW E IL PARAMETRO ID --}}
         <td><a href="{{route('articles.show', $item->id)}}">{{$item->title}}</a></td>
         <td>{{$item->subtitle}}</td>
         <td>{{$item->author}}</td>
         <td>{{$item->pubblication}}</td>
-        {{-- PASSO LA ROUTE SHOW E IL PARAMETRO ID --}}
-        {{-- <td>><i class="fas fa-plus-square"></i></td> --}}
       </tr>
           
       @endforeach
