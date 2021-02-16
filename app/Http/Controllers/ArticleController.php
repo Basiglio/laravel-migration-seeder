@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use app\Article;
+
 
 use Illuminate\Http\Request;
+use app\Article;
 
 class ArticleController extends Controller
 {
@@ -14,6 +15,8 @@ class ArticleController extends Controller
      */
     public function index()
     {
+        // $articles = Article::all();
+
         return view('articles.index');
     }
 
