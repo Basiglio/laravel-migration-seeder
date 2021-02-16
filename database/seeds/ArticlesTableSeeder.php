@@ -21,7 +21,7 @@ class ArticlesTableSeeder extends Seeder
             $newArticle -> title = $faker -> text($maxNbChars = 50);
             $newArticle -> subtitle = $faker -> text($maxNbChars = 20);
             $newArticle -> author = $faker -> name;
-            $newArticle -> text = $faker -> text($maxNbChars = 200);
+            $newArticle -> text = $faker -> text($maxNbChars = 5000);
             $newArticle -> pubblication = $faker -> date;
             
             // SALVO I DATI

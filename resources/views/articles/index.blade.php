@@ -9,13 +9,14 @@
 
 
 @section('main_content')
-  <table class="table">
+  <table class="table table-bordered">
     <thead>
       <tr>
         <td>Titolo</td>
         <td>Sottotitolo</td>
         <td>Autore</td>
         <td>Data di Pubblicazione</td>
+        <td>Leggi Articolo</td>
       </tr>
     </thead>
     <tbody>
