@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use app\Article;
 
 use Illuminate\Http\Request;
 
