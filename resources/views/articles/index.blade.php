@@ -9,25 +9,25 @@
 
 
 @section('main_content')
-  <table class="table table-bordered">
+  <table class="table table-bordered table-hover">
     <thead>
       <tr>
         <td>Titolo</td>
         <td>Sottotitolo</td>
         <td>Autore</td>
         <td>Data di Pubblicazione</td>
-        <td>Leggi Articolo</td>
       </tr>
     </thead>
     <tbody>
       @foreach ($articles as $item)
       <tr>
-        <td>{{$item->title}}</td>
+
+        <td><a href="{{route('articles.show', $item->id)}}">{{$item->title}}</a></td>
         <td>{{$item->subtitle}}</td>
         <td>{{$item->author}}</td>
         <td>{{$item->pubblication}}</td>
         {{-- PASSO LA ROUTE SHOW E IL PARAMETRO ID --}}
-        <td><a href="{{route('articles.show', $item->id)}}"><i class="fas fa-plus-square"></i></a></td>
+        {{-- <td>><i class="fas fa-plus-square"></i></td> --}}
       </tr>
           
       @endforeach
